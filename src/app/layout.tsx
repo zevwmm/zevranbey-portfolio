@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const syne = Syne({
@@ -54,6 +55,7 @@ export default function RootLayout({
       </head>
       <body className="bg-bg text-ink font-body antialiased overflow-x-hidden">
         <main role="main">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
