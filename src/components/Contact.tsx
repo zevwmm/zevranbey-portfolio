@@ -16,7 +16,19 @@ const InstagramIcon = () => (
   </svg>
 );
 
+const FiverrIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M23.004 5.057a2.403 2.403 0 0 1-4.806 0 2.403 2.403 0 0 1 4.806 0zM9.708 21.324v-8.01h4.46v-2.758H9.708V8.881c0-1.685.88-2.608 2.541-2.608h1.93V3.515h-2.451C8.493 3.515 6.57 5.47 6.57 8.881v1.675H4.43v2.758H6.57v8.01h3.138zm10.454-8.327h-3.138v8.327h3.138v-8.327z" />
+  </svg>
+);
+
 const contacts = [
+  {
+    icon: <FiverrIcon />,
+    label: "Hire on Fiverr",
+    value: "fiverr.com/s/WEa7ml7",
+    href: "https://www.fiverr.com/s/WEa7ml7",
+  },
   {
     icon: <MessageCircle size={18} />,
     label: "Chat on WhatsApp",
