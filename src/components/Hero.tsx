@@ -111,7 +111,7 @@ export default function Hero() {
           {/* Stats */}
           <motion.div
             variants={item}
-            className="flex items-center gap-8 mt-14 pt-8 border-t border-edge"
+            className="flex items-center gap-4 md:gap-8 mt-14 pt-8 border-t border-edge"
           >
             <div>
               <div className="font-heading font-black text-2xl text-ink">3+</div>

@@ -165,7 +165,7 @@ export default function Contact() {
             </div>
 
             {/* Trust note */}
-            <p className="text-dim text-xs font-body text-center lg:text-left px-1">
+            <p className="text-dim text-xs font-body text-left px-1">
               Typically responds within 3 hours · Indonesian timezone (UTC+7) · English &amp; Bahasa Indonesia
             </p>
           </motion.div>

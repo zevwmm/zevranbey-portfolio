@@ -86,6 +86,12 @@ body::before {
 }
 
 /* ── Custom Cursor — Rocket (mouse / fine pointer devices only) ──────────────── */
+
+/* Hidden by default — shown only on pointer:fine (mouse) devices */
+.cursor-rocket {
+  display: none;
+}
+
 @media (pointer: fine) {
   *,
   *:hover,
@@ -95,6 +101,7 @@ body::before {
   }
 
   .cursor-rocket {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;

@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 border-t border-edge flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="py-6 border-t border-edge flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="text-dim text-xs font-body">
             &copy; {year} ZevranBey. All rights reserved.
           </p>
