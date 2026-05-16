@@ -7,11 +7,13 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import CursorWrapper from "@/components/CursorWrapper";
 import IntroLoader from "@/components/IntroLoader";
+import StarParticles from "@/components/StarParticles";
 
 export default function Home() {
   return (
     <>
       <IntroLoader />
+      <StarParticles />
       <CursorWrapper />
       <Navbar />
       <main>

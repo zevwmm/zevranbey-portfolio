@@ -66,6 +66,27 @@ body::before {
   z-index: 9999;
 }
 
+/* ── Falling star particles ──────────────────────────────────────── */
+@keyframes star-drift {
+  0%   { transform: translate(0, -20px) rotate(0deg)   scale(1);    opacity: 0; }
+  8%   { opacity: 0.60; }
+  50%  { opacity: 0.45; }
+  92%  { opacity: 0.52; }
+  100% { transform: translate(-55px, 105vh) rotate(210deg) scale(0.75); opacity: 0; }
+}
+
+.star-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 8;
+  animation: star-drift linear infinite;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-particle { display: none; }
+}
+
 /* Float animation for hero geometric */
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(0deg); }

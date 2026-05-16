@@ -359,6 +359,175 @@ function VoidIllustration() {
   );
 }
 
+function KovaIllustration() {
+  return (
+    <svg
+      viewBox="0 0 600 380"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full"
+      role="img"
+      aria-label="KOVA MK-1 keyboard product showcase website preview"
+    >
+      <defs>
+        <clipPath id="kovaWin">
+          <rect x="16" y="20" width="564" height="346" rx="10" />
+        </clipPath>
+        <radialGradient id="kovaPinkGlow" cx="65%" cy="45%" r="38%">
+          <stop offset="0%" stopColor="#FF8FAB" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="transparent" />
+        </radialGradient>
+      </defs>
+
+      {/* SVG outer background — warm cream */}
+      <rect width="600" height="380" fill="#EDE8E0" />
+
+      {/* Window pink shadow */}
+      <rect x="20" y="26" width="564" height="346" rx="12" fill="#FF8FAB" opacity="0.07" />
+
+      {/* Browser shell */}
+      <rect x="16" y="20" width="564" height="346" rx="10" fill="#FDF8F5" />
+
+      {/* Chrome bar */}
+      <rect x="16" y="20" width="564" height="42" rx="10" fill="#F2EAE6" />
+      <rect x="16" y="50" width="564" height="12" fill="#F2EAE6" />
+
+      {/* Traffic lights */}
+      <circle cx="42" cy="41" r="6" fill="#FF5F57" opacity="0.72" />
+      <circle cx="62" cy="41" r="6" fill="#FEBC2E" opacity="0.72" />
+      <circle cx="82" cy="41" r="6" fill="#28C840" opacity="0.72" />
+
+      {/* URL bar */}
+      <rect x="114" y="30" width="364" height="22" rx="11" fill="#FFFFFF" opacity="0.55" />
+      <text x="296" y="45" textAnchor="middle" fill="#A89BA0" fontSize="8" fontFamily="monospace">
+        kova-keyboard.vercel.app
+      </text>
+
+      <g clipPath="url(#kovaWin)">
+        {/* Website background */}
+        <rect x="16" y="62" width="564" height="304" fill="#FDF8F5" />
+        <rect x="16" y="62" width="564" height="304" fill="url(#kovaPinkGlow)" />
+
+        {/* NAV */}
+        <text x="40" y="90" fill="#2A1F24" fontSize="13" fontFamily="sans-serif" fontWeight="900" letterSpacing="2">
+          KOVA
+        </text>
+        <text x="83" y="90" fill="#FF8FAB" fontSize="13" fontFamily="sans-serif" fontWeight="900">.</text>
+        <text x="392" y="90" fill="#A89BA0" fontSize="8" fontFamily="sans-serif">Specs</text>
+        <text x="430" y="90" fill="#A89BA0" fontSize="8" fontFamily="sans-serif">Features</text>
+        <text x="476" y="90" fill="#A89BA0" fontSize="8" fontFamily="sans-serif">Colors</text>
+        <rect x="504" y="78" width="60" height="22" rx="11" fill="#FF8FAB" />
+        <text x="534" y="93" textAnchor="middle" fill="#FFFFFF" fontSize="7.5" fontFamily="sans-serif" fontWeight="700">
+          Pre-order
+        </text>
+        <line x1="16" y1="104" x2="580" y2="104" stroke="#F0E4E8" strokeWidth="0.8" />
+
+        {/* HERO LEFT */}
+        {/* Eyebrow */}
+        <line x1="40" y1="123" x2="52" y2="123" stroke="#FF8FAB" strokeWidth="1.5" />
+        <text x="57" y="127" fill="#FF8FAB" fontSize="7" fontFamily="sans-serif" letterSpacing="3.5">INTRODUCING</text>
+
+        {/* KOVA heading */}
+        <text x="38" y="172" fill="#2A1F24" fontSize="44" fontFamily="sans-serif" fontWeight="900" letterSpacing="-1">
+          KOVA
+        </text>
+        {/* MK-1 in pink */}
+        <text x="38" y="212" fill="#FF8FAB" fontSize="38" fontFamily="sans-serif" fontWeight="900" letterSpacing="-1">
+          MK-1
+        </text>
+
+        {/* Subtitle */}
+        <text x="40" y="238" fill="#A89BA0" fontSize="8" fontFamily="sans-serif">
+          Precision meets poetry. Inspired by
+        </text>
+        <text x="40" y="250" fill="#A89BA0" fontSize="8" fontFamily="sans-serif">
+          the quiet beauty of Japanese craft.
+        </text>
+
+        {/* Price + CTA */}
+        <text x="40" y="276" fill="#FF8FAB" fontSize="20" fontFamily="sans-serif" fontWeight="900">$189</text>
+        <rect x="84" y="264" width="106" height="25" rx="12" fill="#FF8FAB" />
+        <text x="137" y="281" textAnchor="middle" fill="white" fontSize="8.5" fontFamily="sans-serif" fontWeight="700">
+          Pre-order Now →
+        </text>
+
+        {/* Divider + stats */}
+        <line x1="40" y1="303" x2="285" y2="303" stroke="#F0E4E8" strokeWidth="0.8" />
+        <text x="40"  y="320" fill="#2A1F24" fontSize="13" fontFamily="sans-serif" fontWeight="900">67</text>
+        <text x="40"  y="331" fill="#A89BA0" fontSize="6.5" fontFamily="sans-serif">Keys</text>
+        <line x1="66" y1="308" x2="66" y2="328" stroke="#F0E4E8" strokeWidth="0.8" />
+        <text x="74"  y="320" fill="#2A1F24" fontSize="13" fontFamily="sans-serif" fontWeight="900">1.8kg</text>
+        <text x="74"  y="331" fill="#A89BA0" fontSize="6.5" fontFamily="sans-serif">Solid build</text>
+        <line x1="114" y1="308" x2="114" y2="328" stroke="#F0E4E8" strokeWidth="0.8" />
+        <text x="122" y="320" fill="#2A1F24" fontSize="13" fontFamily="sans-serif" fontWeight="900">6°</text>
+        <text x="122" y="331" fill="#A89BA0" fontSize="6.5" fontFamily="sans-serif">Angle</text>
+
+        {/* HERO RIGHT — keyboard body */}
+        <rect x="318" y="106" width="240" height="216" rx="18" fill="#FFF5F8" stroke="#F0E4E8" strokeWidth="1.2" />
+
+        {/* Key rows — 5-row simplified layout */}
+        {/* Row 1: function keys */}
+        {[330,348,366,384,402,420,438,456,474,492,510,528,546].map((x, i) => (
+          <rect key={`kr1-${i}`} x={x} y="118" width="12" height="10" rx="2" fill="#FF8FAB" opacity="0.18" />
+        ))}
+        {/* Row 2 */}
+        {[327,345,363,381,399,417,435,453,471,489,507,525,543].map((x, i) => (
+          <rect key={`kr2-${i}`} x={x} y="133" width="13" height="12" rx="2.5" fill="#FF8FAB" opacity="0.14" />
+        ))}
+        {/* Row 3 */}
+        {[331,349,367,385,403,421,439,457,475,493,511,529].map((x, i) => (
+          <rect key={`kr3-${i}`} x={x} y="150" width="13" height="12" rx="2.5" fill="#FF8FAB" opacity="0.16" />
+        ))}
+        {/* Row 4 */}
+        {[334,352,370,388,406,424,442,460,478,496,514].map((x, i) => (
+          <rect key={`kr4-${i}`} x={x} y="167" width="13" height="12" rx="2.5" fill="#FF8FAB" opacity="0.13" />
+        ))}
+        {/* Row 5: space bar row */}
+        {[327,345,363].map((x, i) => (
+          <rect key={`kr5l-${i}`} x={x} y="184" width="13" height="12" rx="2.5" fill="#FF8FAB" opacity="0.14" />
+        ))}
+        <rect x="383" y="184" width="106" height="12" rx="4" fill="#FF8FAB" opacity="0.25" />
+        {[496,514,532,550].map((x, i) => (
+          <rect key={`kr5r-${i}`} x={x} y="184" width="12" height="12" rx="2.5" fill="#FF8FAB" opacity="0.14" />
+        ))}
+
+        {/* Accent line below keyboard */}
+        <line x1="318" y1="208" x2="558" y2="208" stroke="#F0E4E8" strokeWidth="0.8" />
+
+        {/* Scroll progress indicator */}
+        <rect x="388" y="276" width="140" height="1" rx="0.5" fill="#F0E4E8" />
+        <rect x="388" y="276" width="52"  height="1" rx="0.5" fill="#FF8FAB" />
+        <text x="398" y="290" fill="#A89BA0" fontSize="6.5" fontFamily="sans-serif" letterSpacing="2">SCROLL TO EXPLORE</text>
+
+        {/* Small sakura petal decor */}
+        <path
+          d="M 540 114 C 544 108 551 105 548 100 C 545 105 538 108 540 114 Z"
+          fill="#FF8FAB"
+          opacity="0.3"
+        />
+        <path
+          d="M 545 114 C 548 107 553 110 548 100 C 544 110 540 108 545 114 Z"
+          fill="#FF8FAB"
+          opacity="0.2"
+        />
+
+        {/* Dark footer */}
+        <rect x="16" y="352" width="564" height="14" fill="#1A1218" />
+        <line x1="16" y1="352" x2="580" y2="352" stroke="#2E2530" strokeWidth="0.8" />
+        <text x="40"  y="362" fill="#6B5A62" fontSize="6.5" fontFamily="sans-serif" letterSpacing="1.5">
+          KOVA KEYBOARDS · 2026
+        </text>
+        <text x="540" y="362" textAnchor="end" fill="#6B5A62" fontSize="6.5" fontFamily="sans-serif">
+          Japan-inspired
+        </text>
+      </g>
+
+      {/* Window border */}
+      <rect x="16" y="20" width="564" height="346" rx="10" stroke="#E8E0D8" strokeWidth="1" />
+    </svg>
+  );
+}
+
 // ── Shared components ────────────────────────────────────────────────────────
 
 const techTag = (label: string) => (
@@ -395,7 +564,7 @@ export default function Portfolio() {
             className="font-heading font-black text-ink leading-tight tracking-tight mb-5"
             style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)" }}
           >
-            Three tiers. One standard:{" "}
+            Four tiers. One standard:{" "}
             <em className="text-accent-dark not-italic">exceptional.</em>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-ink-secondary font-body text-lg max-w-xl">
@@ -570,6 +739,76 @@ export default function Portfolio() {
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </a>
+                </div>
+              </div>
+            </div>
+          </motion.article>
+
+          {/* ── Card 4: KOVA MK-1 ─────────────────────────────────────────── */}
+          <motion.article
+            initial={{ opacity: 0, y: 48 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.85, delay: 0.1, ease: "easeOut" as const }}
+            className="group relative rounded-2xl border border-edge bg-surface overflow-hidden hover:border-[#FF8FAB]/30 transition-all duration-500 hover:shadow-[0_16px_64px_rgba(255,143,171,0.1)] shadow-sm"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-[45%_55%]">
+              {/* Info — left on desktop */}
+              <div className="flex flex-col justify-between p-8 md:p-10 order-2 md:order-1">
+                <div>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span
+                      className="inline-block text-[10px] font-body font-medium tracking-[0.15em] uppercase px-3 py-1 rounded-full border"
+                      style={{
+                        background: "rgba(255,143,171,0.10)",
+                        color: "#FF8FAB",
+                        borderColor: "rgba(255,143,171,0.28)",
+                      }}
+                    >
+                      Product Showcase
+                    </span>
+                  </div>
+                  <h3 className="font-heading font-black text-ink text-3xl tracking-tight mb-1">
+                    KOVA MK-1
+                  </h3>
+                  <p className="text-dim text-sm font-body mb-5">
+                    Mechanical Keyboard · Product Showcase
+                  </p>
+                  <p className="text-ink-secondary font-body text-base leading-relaxed mb-7">
+                    A scroll-driven product showcase for a fictional sakura-themed
+                    mechanical keyboard. 192-frame canvas animation tied directly
+                    to scroll position — as you scroll, the keyboard disassembles
+                    and reassembles piece by piece. Japanese aesthetic throughout.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {["Next.js", "Canvas API", "GSAP ScrollTrigger", "Frame Animation", "Sakura Theme"].map(techTag)}
+                  </div>
+                </div>
+                <div className="flex items-center justify-between pt-6 border-t border-edge">
+                  <span className="text-ink-secondary text-sm font-body">
+                    Starting from{" "}
+                    <span className="font-semibold" style={{ color: "#FF8FAB" }}>$500</span>
+                  </span>
+                  <a
+                    href="https://kova-keyboard.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-body font-semibold hover:gap-3 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
+                    style={{ color: "#FF8FAB" }}
+                    aria-label="Visit KOVA MK-1 live site"
+                  >
+                    Visit Live Site
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              {/* Thumbnail — right on desktop */}
+              <div className="relative overflow-hidden h-64 md:h-auto min-h-[300px] order-1 md:order-2">
+                <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.03]">
+                  <KovaIllustration />
                 </div>
               </div>
             </div>
