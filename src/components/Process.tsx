@@ -92,7 +92,12 @@ export default function Process() {
 
                 {/* Step number circle */}
                 <div className="flex md:flex-col items-start md:items-center gap-5 md:gap-0 pb-10 md:pb-0">
-                  <div className="relative flex-shrink-0">
+                  <motion.div
+                    className="relative flex-shrink-0 cursor-pointer"
+                    whileHover={{ scale: 1.12 }}
+                    whileTap={{ scale: 0.92 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 22 }}
+                  >
                     {/* Glow behind circle */}
                     <div
                       className="absolute inset-0 rounded-full blur-md"
@@ -104,7 +109,7 @@ export default function Process() {
                         {step.number}
                       </span>
                     </div>
-                  </div>
+                  </motion.div>
 
                   {/* Text */}
                   <div className="md:mt-7 md:text-center md:px-2">
@@ -129,17 +134,18 @@ export default function Process() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-16 md:mt-20 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
+          <motion.a
             href="https://wa.me/6285166658239?text=Hi%20ZevranBey%2C%20I'm%20interested%20in%20your%20web%20design%20services"
             target="_blank"
             rel="noopener noreferrer"
+            whileTap={{ scale: 0.96 }}
             className="inline-flex items-center gap-2 bg-accent text-ink px-7 py-3.5 rounded-full font-semibold text-sm font-body hover:bg-accent-dim transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
           >
             Start Step One — It&apos;s Free
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </a>
+          </motion.a>
         </motion.div>
       </div>
     </section>

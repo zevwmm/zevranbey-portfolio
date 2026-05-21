@@ -119,7 +119,7 @@ export default function Navbar() {
           {/* Hamburger */}
           <button
             ref={hamburgerRef}
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 relative z-[60] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink rounded-md"
+            className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 relative z-[60] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink rounded-md active:scale-90 transition-transform duration-150"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
@@ -187,15 +187,18 @@ export default function Navbar() {
               transition={{ delay: 0.32, duration: 0.4 }}
               className="mt-10"
             >
-              <a
+              <motion.a
                 href="https://wa.me/6285166658239"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
-                className="inline-flex items-center gap-2 bg-accent text-ink px-8 py-4 rounded-full text-base font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-dark"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 22 }}
+                className="inline-flex items-center gap-2 bg-accent text-ink px-8 py-4 rounded-full text-base font-semibold hover:bg-accent-dim hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-dark"
               >
                 Let&apos;s Talk
-              </a>
+              </motion.a>
             </motion.div>
 
             <motion.p

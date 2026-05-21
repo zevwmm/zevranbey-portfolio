@@ -99,9 +99,10 @@ export default function Footer() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-dim text-sm font-body hover:text-ink transition-colors duration-200"
+                className="text-dim text-sm font-body hover:text-ink transition-colors duration-200 relative group"
               >
                 {link.label}
+                <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-accent-dark transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </motion.nav>
@@ -115,16 +116,19 @@ export default function Footer() {
             className="flex items-center gap-3"
           >
             {socials.map((s) => (
-              <a
+              <motion.a
                 key={s.label}
                 href={s.href}
                 target={s.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={s.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
                 aria-label={s.label}
-                className="w-9 h-9 rounded-full border border-edge flex items-center justify-center text-dim hover:text-accent-dark hover:border-accent-dark/40 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-dark"
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.88 }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                className="w-9 h-9 rounded-full border border-edge flex items-center justify-center text-dim hover:text-accent-dark hover:border-accent-dark/40 hover:bg-accent/10 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-dark"
               >
                 {s.icon}
-              </a>
+              </motion.a>
             ))}
           </motion.div>
         </div>

@@ -110,9 +110,10 @@ export default function Contact() {
                 target={c.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={c.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
                 variants={fadeUp}
-                className="group flex items-center gap-5 p-5 rounded-xl border border-edge bg-surface hover:border-accent/30 hover:bg-surface transition-all duration-300"
+                whileTap={{ scale: 0.98 }}
+                className="group flex items-center gap-5 p-5 rounded-xl border border-edge bg-surface hover:border-accent/30 hover:bg-surface hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)] transition-all duration-300"
               >
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-edge flex items-center justify-center text-ink-secondary group-hover:bg-accent group-hover:text-ink transition-all duration-300">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-edge flex items-center justify-center text-ink-secondary group-hover:bg-accent group-hover:text-ink group-hover:scale-110 transition-all duration-300">
                   {c.icon}
                 </div>
                 <div>
@@ -130,7 +131,7 @@ export default function Contact() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className="ml-auto text-dim group-hover:text-accent-dark transition-colors duration-200"
+                  className="ml-auto text-dim group-hover:text-accent-dark group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
                   aria-hidden="true"
                 >
                   <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -163,17 +164,18 @@ export default function Contact() {
                 No forms, no sales calls. Just message me on WhatsApp and tell me what you&apos;re building. I&apos;ll get back within a few hours.
               </p>
 
-              <a
+              <motion.a
                 href="https://wa.me/6285166658239?text=Hi%20ZevranBey%2C%20I'm%20interested%20in%20your%20web%20design%20services"
                 target="_blank"
                 rel="noopener noreferrer"
+                whileTap={{ scale: 0.97 }}
                 className="relative inline-flex items-center gap-2.5 bg-accent text-ink px-8 py-4 rounded-full font-heading font-black text-sm hover:bg-accent-dim transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_4px_24px_rgba(0,0,0,0.12)]"
               >
                 Start a Project via WhatsApp
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </motion.a>
             </div>
 
             {/* Trust note */}

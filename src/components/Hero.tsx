@@ -92,20 +92,22 @@ export default function Hero() {
 
           {/* CTAs */}
           <motion.div variants={item} className="flex flex-wrap gap-4">
-            <a
+            <motion.a
               href="#work"
+              whileTap={{ scale: 0.96 }}
               className="inline-flex items-center gap-2 bg-accent text-ink px-7 py-3.5 rounded-full font-semibold text-sm font-body hover:bg-accent-dim transition-all duration-200 hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(0,0,0,0.12)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-dark"
             >
               See My Work
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://wa.me/6285166658239"
               target="_blank"
               rel="noopener noreferrer"
+              whileTap={{ scale: 0.96 }}
               className="inline-flex items-center gap-2 border border-edge text-ink px-7 py-3.5 rounded-full font-semibold text-sm font-body hover:border-ink/30 hover:bg-ink/5 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
             >
               WhatsApp Me
-            </a>
+            </motion.a>
           </motion.div>
 
           {/* Stats */}
@@ -113,20 +115,32 @@ export default function Hero() {
             variants={item}
             className="flex items-center gap-4 md:gap-8 mt-14 pt-8 border-t border-edge"
           >
-            <div>
+            <motion.div
+              whileHover={{ scale: 1.06, y: -1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 22 }}
+              className="cursor-default"
+            >
               <div className="font-heading font-black text-2xl text-ink">3+</div>
               <div className="text-dim text-xs font-body tracking-wide mt-0.5">Tiers Available</div>
-            </div>
+            </motion.div>
             <div className="w-px h-10 bg-edge" aria-hidden="true" />
-            <div>
+            <motion.div
+              whileHover={{ scale: 1.06, y: -1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 22 }}
+              className="cursor-default"
+            >
               <div className="font-heading font-black text-2xl text-ink">$80</div>
               <div className="text-dim text-xs font-body tracking-wide mt-0.5">Starting Price</div>
-            </div>
+            </motion.div>
             <div className="w-px h-10 bg-edge" aria-hidden="true" />
-            <div>
+            <motion.div
+              whileHover={{ scale: 1.06, y: -1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 22 }}
+              className="cursor-default"
+            >
               <div className="font-heading font-black text-2xl text-ink">14d</div>
               <div className="text-dim text-xs font-body tracking-wide mt-0.5">Max Turnaround</div>
-            </div>
+            </motion.div>
           </motion.div>
         </motion.div>
 

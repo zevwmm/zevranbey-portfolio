@@ -44,7 +44,8 @@ function TierCard({
   return (
     <motion.div
       variants={fadeUp}
-      className={`relative rounded-2xl border p-8 flex flex-col transition-all duration-500 hover:-translate-y-1.5 shadow-sm group ${
+      whileTap={{ scale: 0.99 }}
+      className={`relative rounded-2xl border p-8 flex flex-col transition-all duration-500 hover:-translate-y-1.5 shadow-sm group cursor-default ${
         highlighted
           ? "bg-surface border-accent/40 hover:border-accent/60 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
           : "bg-surface border-edge hover:border-ink/15 hover:shadow-[0_12px_40px_rgba(0,0,0,0.07)]"
@@ -94,7 +95,7 @@ function TierCard({
         {features.map((feature, i) => (
           <li key={i} className="flex items-center gap-3 text-sm font-body">
             <span
-              className={`flex-shrink-0 ${highlighted ? "text-accent-dark" : "text-dim"}`}
+              className={`flex-shrink-0 transition-transform duration-200 group-hover:scale-110 ${highlighted ? "text-accent-dark" : "text-dim"}`}
             >
               {feature.icon}
             </span>
@@ -104,10 +105,11 @@ function TierCard({
       </ul>
 
       {/* CTA */}
-      <a
+      <motion.a
         href={`https://wa.me/6285166658239?text=Hi%20ZevranBey%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(title)}%20package`}
         target="_blank"
         rel="noopener noreferrer"
+        whileTap={{ scale: 0.96 }}
         className={`inline-flex items-center justify-center gap-2 rounded-full py-3.5 text-sm font-body font-semibold transition-all duration-200 hover:scale-[1.02] ${
           highlighted
             ? "bg-accent text-ink hover:bg-accent-dim hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
@@ -118,7 +120,7 @@ function TierCard({
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
-      </a>
+      </motion.a>
     </motion.div>
   );
 }

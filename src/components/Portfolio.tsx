@@ -528,6 +528,172 @@ function KovaIllustration() {
   );
 }
 
+function LuminaIllustration() {
+  return (
+    <svg
+      viewBox="0 0 600 380"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full"
+      role="img"
+      aria-label="LUMINA smart lighting website preview"
+    >
+      <defs>
+        <radialGradient id="luminaAmbientGlow" cx="70%" cy="50%" r="34%">
+          <stop offset="0%" stopColor="#D4962A" stopOpacity="0.16" />
+          <stop offset="100%" stopColor="transparent" />
+        </radialGradient>
+        <radialGradient id="luminaBeamGlow" cx="66%" cy="68%" r="26%">
+          <stop offset="0%" stopColor="#E8B040" stopOpacity="0.20" />
+          <stop offset="100%" stopColor="transparent" />
+        </radialGradient>
+        <clipPath id="luminaWin">
+          <rect x="16" y="20" width="564" height="346" rx="10" />
+        </clipPath>
+      </defs>
+
+      {/* SVG outer background — deep warm dark */}
+      <rect width="600" height="380" fill="#18140A" />
+
+      {/* amber window ambient shadow */}
+      <rect x="20" y="26" width="564" height="346" rx="12" fill="#D4962A" opacity="0.07" />
+
+      {/* browser window shell */}
+      <rect x="16" y="20" width="564" height="346" rx="10" fill="#0E0D0A" />
+
+      {/* chrome bar */}
+      <rect x="16" y="20" width="564" height="42" rx="10" fill="#181410" />
+      <rect x="16" y="50" width="564" height="12" fill="#181410" />
+
+      {/* traffic lights */}
+      <circle cx="42" cy="41" r="6" fill="#FF5F57" opacity="0.65" />
+      <circle cx="62" cy="41" r="6" fill="#FEBC2E" opacity="0.65" />
+      <circle cx="82" cy="41" r="6" fill="#28C840" opacity="0.65" />
+
+      {/* url bar */}
+      <rect x="114" y="30" width="364" height="22" rx="11" fill="#0A0907" opacity="0.8" />
+      <text x="296" y="45" textAnchor="middle" fill="#4A3C20" fontSize="8" fontFamily="monospace">
+        lumina-lighting.vercel.app
+      </text>
+
+      <g clipPath="url(#luminaWin)">
+        {/* website background */}
+        <rect x="16" y="62" width="564" height="304" fill="#0C0C0E" />
+        <rect x="16" y="62" width="564" height="304" fill="url(#luminaAmbientGlow)" />
+        <rect x="16" y="62" width="564" height="304" fill="url(#luminaBeamGlow)" />
+
+        {/* NAV */}
+        <rect x="16" y="62" width="564" height="40" fill="#09090B" />
+        <text x="40" y="88" fill="#D4962A" fontSize="14" fontFamily="sans-serif" fontWeight="900" letterSpacing="4">
+          LUMINA
+        </text>
+        <text x="372" y="88" fill="#3A3020" fontSize="8" fontFamily="sans-serif">Products</text>
+        <text x="418" y="88" fill="#3A3020" fontSize="8" fontFamily="sans-serif">Features</text>
+        <text x="464" y="88" fill="#3A3020" fontSize="8" fontFamily="sans-serif">About</text>
+        <rect x="502" y="76" width="58" height="20" rx="10" fill="#D4962A" />
+        <text x="531" y="90" textAnchor="middle" fill="#0C0C0E" fontSize="7.5" fontFamily="sans-serif" fontWeight="700">
+          Shop Now
+        </text>
+        <line x1="16" y1="102" x2="580" y2="102" stroke="#1C1810" strokeWidth="0.8" />
+
+        {/* HERO LEFT — text */}
+        <rect x="40" y="116" width="90" height="16" rx="8" fill="#D4962A" opacity="0.14" />
+        <text x="85" y="128" textAnchor="middle" fill="#D4962A" fontSize="7" fontFamily="sans-serif" letterSpacing="2">
+          SMART LIGHTING
+        </text>
+
+        <text x="40" y="162" fill="#F0E6CC" fontSize="26" fontFamily="Georgia, serif" fontWeight="700">Light that</text>
+        <text x="40" y="196" fill="#D4962A" fontSize="26" fontFamily="Georgia, serif" fontStyle="italic" fontWeight="700">
+          feels alive.
+        </text>
+
+        <text x="40" y="222" fill="#2C2214" fontSize="8.5" fontFamily="sans-serif">Precision-crafted luminaires that</text>
+        <text x="40" y="236" fill="#2C2214" fontSize="8.5" fontFamily="sans-serif">adapt to your space and life.</text>
+
+        {/* CTA buttons */}
+        <rect x="40" y="252" width="108" height="26" rx="13" fill="#D4962A" />
+        <text x="94" y="269" textAnchor="middle" fill="#0C0C0E" fontSize="8.5" fontFamily="sans-serif" fontWeight="700">
+          Explore →
+        </text>
+        <rect x="156" y="252" width="96" height="26" rx="13" fill="transparent" stroke="#282010" strokeWidth="1" />
+        <text x="204" y="269" textAnchor="middle" fill="#3E3020" fontSize="8.5" fontFamily="sans-serif">Learn More</text>
+
+        {/* stats */}
+        <line x1="40" y1="298" x2="275" y2="298" stroke="#1C1810" strokeWidth="0.8" />
+        <text x="40" y="315" fill="#B87020" fontSize="13" fontFamily="sans-serif" fontWeight="800">12k+</text>
+        <text x="40" y="328" fill="#28200E" fontSize="6.5" fontFamily="sans-serif">Lamps sold</text>
+        <line x1="80" y1="302" x2="80" y2="325" stroke="#1C1810" strokeWidth="0.8" />
+        <text x="88" y="315" fill="#B87020" fontSize="13" fontFamily="sans-serif" fontWeight="800">4.9★</text>
+        <text x="88" y="328" fill="#28200E" fontSize="6.5" fontFamily="sans-serif">Rating</text>
+        <line x1="128" y1="302" x2="128" y2="325" stroke="#1C1810" strokeWidth="0.8" />
+        <text x="136" y="315" fill="#B87020" fontSize="13" fontFamily="sans-serif" fontWeight="800">48h</text>
+        <text x="136" y="328" fill="#28200E" fontSize="6.5" fontFamily="sans-serif">Delivery</text>
+
+        {/* HERO RIGHT — arc floor lamp */}
+        <line x1="310" y1="102" x2="310" y2="366" stroke="#161410" strokeWidth="1" />
+
+        {/* lamp base platform */}
+        <ellipse cx="460" cy="352" rx="48" ry="8" fill="#1A1610" />
+        <rect x="454" y="302" width="12" height="52" rx="3" fill="#262018" />
+
+        {/* arc arm */}
+        <path d="M 460 302 Q 460 196 396 148" stroke="#2C2620" strokeWidth="6" strokeLinecap="round" fill="none" />
+        <path d="M 460 302 Q 460 196 396 148" stroke="#3C3428" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+
+        {/* lamp head */}
+        <ellipse cx="396" cy="148" rx="24" ry="10" fill="#28221A" transform="rotate(-30 396 148)" />
+        <ellipse cx="396" cy="148" rx="18" ry="7" fill="#D4962A" opacity="0.18" transform="rotate(-30 396 148)" />
+        <ellipse cx="396" cy="148" rx="12" ry="5" fill="#E8B040" opacity="0.40" transform="rotate(-30 396 148)" />
+
+        {/* light cone — three overlapping polygons for depth */}
+        <path d="M 385 155 L 328 316 L 498 316 L 424 155 Z" fill="#D4962A" opacity="0.04" />
+        <path d="M 390 157 L 345 296 L 466 296 L 420 157 Z" fill="#E8B040" opacity="0.06" />
+        <path d="M 396 160 L 366 265 L 444 265 L 418 160 Z" fill="#F5C060" opacity="0.07" />
+
+        {/* floating spec chips */}
+        <rect x="318" y="114" width="74" height="18" rx="9" fill="#1C1810" stroke="#2C2416" strokeWidth="1" />
+        <text x="355" y="126" textAnchor="middle" fill="#D4962A" fontSize="7" fontFamily="sans-serif" letterSpacing="1">
+          Warm White
+        </text>
+        <rect x="402" y="122" width="66" height="18" rx="9" fill="#1C1810" stroke="#2C2416" strokeWidth="1" />
+        <text x="435" y="134" textAnchor="middle" fill="#907830" fontSize="7" fontFamily="sans-serif" letterSpacing="1">
+          2700K CCT
+        </text>
+        <rect x="476" y="108" width="70" height="18" rx="9" fill="#1C1810" stroke="#2C2416" strokeWidth="1" />
+        <text x="511" y="120" textAnchor="middle" fill="#907830" fontSize="7" fontFamily="sans-serif" letterSpacing="1">
+          Arc Series
+        </text>
+
+        {/* dot grid — bottom right */}
+        {Array.from({ length: 4 }, (_, r) =>
+          Array.from({ length: 5 }, (_, c) => (
+            <circle
+              key={`luminaGrid-${r}-${c}`}
+              cx={482 + c * 14}
+              cy={312 + r * 14}
+              r="1"
+              fill="#1E1A0C"
+            />
+          ))
+        )}
+
+        {/* footer strip */}
+        <rect x="16" y="352" width="564" height="14" fill="#070605" />
+        <line x1="16" y1="352" x2="580" y2="352" stroke="#12100A" strokeWidth="0.8" />
+        <text x="40" y="362" fill="#28200E" fontSize="7" fontFamily="sans-serif" letterSpacing="3">
+          LUMINA · SMART LIGHTING
+        </text>
+        <text x="540" y="362" textAnchor="end" fill="#28200E" fontSize="7" fontFamily="sans-serif">
+          Open Source
+        </text>
+      </g>
+
+      {/* window border */}
+      <rect x="16" y="20" width="564" height="346" rx="10" stroke="#2A2010" strokeWidth="1" />
+    </svg>
+  );
+}
+
 // ── Shared components ────────────────────────────────────────────────────────
 
 const techTag = (label: string) => (
@@ -564,7 +730,7 @@ export default function Portfolio() {
             className="font-heading font-black text-ink leading-tight tracking-tight mb-5"
             style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)" }}
           >
-            Four tiers. One standard:{" "}
+            Five tiers. One standard:{" "}
             <em className="text-accent-dark not-italic">exceptional.</em>
           </motion.h2>
           <motion.p variants={fadeUp} className="text-ink-secondary font-body text-lg max-w-xl">
@@ -809,6 +975,72 @@ export default function Portfolio() {
               <div className="relative overflow-hidden h-64 md:h-auto min-h-[300px] order-1 md:order-2">
                 <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.03]">
                   <KovaIllustration />
+                </div>
+              </div>
+            </div>
+          </motion.article>
+
+          {/* ── Card 5: LUMINA ────────────────────────────────────────────── */}
+          <motion.article
+            initial={{ opacity: 0, y: 48 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.85, delay: 0.1, ease: "easeOut" as const }}
+            className="group relative rounded-2xl border border-edge bg-surface overflow-hidden hover:border-[#D4962A]/30 transition-all duration-500 hover:shadow-[0_16px_64px_rgba(212,150,42,0.1)] shadow-sm"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-[55%_45%]">
+              {/* Thumbnail */}
+              <div className="relative overflow-hidden h-64 md:h-auto min-h-[300px]">
+                <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.03]">
+                  <LuminaIllustration />
+                </div>
+              </div>
+              {/* Info */}
+              <div className="flex flex-col justify-between p-8 md:p-10">
+                <div>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span
+                      className="inline-block text-[10px] font-body font-medium tracking-[0.15em] uppercase px-3 py-1 rounded-full border"
+                      style={{
+                        background: "rgba(212,150,42,0.10)",
+                        color: "#C4850A",
+                        borderColor: "rgba(212,150,42,0.28)",
+                      }}
+                    >
+                      Experimental · Demo
+                    </span>
+                  </div>
+                  <h3 className="font-heading font-black text-ink text-3xl tracking-tight mb-1">
+                    LUMINA
+                  </h3>
+                  <p className="text-dim text-sm font-body mb-5">Smart Lighting · Interactive Demo</p>
+                  <p className="text-ink-secondary font-body text-base leading-relaxed mb-7">
+                    A fully standalone single-file site — no build step, no framework. Features a
+                    theme wave transition via the View Transitions API, drag-to-scroll product cards,
+                    magnetic buttons, a custom cursor dot, and per-card spotlight hover effects.
+                    All shipped in one HTML file.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    {["HTML/CSS", "GSAP", "View Transitions API", "Vanilla JS"].map(techTag)}
+                  </div>
+                </div>
+                <div className="flex items-center justify-between pt-6 border-t border-edge">
+                  <span className="text-ink-secondary text-sm font-body">
+                    <span className="font-semibold" style={{ color: "#C4850A" }}>Open Source Demo</span>
+                  </span>
+                  <a
+                    href="https://lumina-lighting.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-body font-semibold hover:gap-3 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
+                    style={{ color: "#C4850A" }}
+                    aria-label="Visit LUMINA live site"
+                  >
+                    Visit Live Site
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
